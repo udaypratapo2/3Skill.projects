@@ -65,7 +65,7 @@ y_test_prob = lr_model.predict_proba(X_test_scaled)[:, 1]
 # 10. Evaluation Function (To be reused for KNN and Decision Tree)
 def evaluate_model(model_name, y_true_train, y_pred_train, y_true_test, y_pred_test, y_prob_test):
     print(f"========== {model_name} ==========")
-    print(f"Train Accuracy: {accuracy_score(y_true_train, y_pred_train):.4f}")
+    print(f"Train Accuracy: {accuracy_score(y_true_train, y_pred_train)}")
     print(f"Test Accuracy:  {accuracy_score(y_true_test, y_pred_test):.4f}")
     print("-" * 30)
     print(f"Test Precision: {precision_score(y_true_test, y_pred_test):.4f}")
